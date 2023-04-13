@@ -1,0 +1,28 @@
+<template>
+  <div>
+    <Header />
+    <main>
+      <slot></slot>
+    </main>
+    <Footer />
+  </div>
+</template>
+
+<script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  name: 'Layout',
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
+<style>
+main {
+  padding: 1rem;
+}
+</style>
